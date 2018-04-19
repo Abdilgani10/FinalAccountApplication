@@ -63,7 +63,7 @@ public class AccountManagementSystemTest {
 		Account Gani = new Account("Gani","Abdallah",1);
 		service.addAccount(Gani);
 		JSONUtil ju=new JSONUtil();
-		String expected="{\"1\":{\"firstName\":\"Ryan\",\"lastName\":\"Prince\",\"accountNumber\":1}}";
+		String expected="{\"1\":{\"firstName\":\"Gani\",\"lastName\":\"Abdallah\",\"accountNumber\":1}}";
 		String actual=ju.getJSONForObject(service.getAccountMap());
 		System.out.println(ju.getJSONForObject(service.getAccountMap()));
 		assertEquals(expected,actual);
