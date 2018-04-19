@@ -18,6 +18,11 @@ public class Account {
 		
 		return accountNumber;
 	}
+
+	public String getfirstName() {
+		
+		return firstName;
+	}
 	
 	
 }

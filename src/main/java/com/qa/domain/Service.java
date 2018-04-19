@@ -33,5 +33,15 @@ public class Service {
 		return accountMap;
 	}
 	
+	public int getfirstnameDuplicate(String name) {
+		int count = 0;
+		for(Account account: accountMap.values()) {
+			if(account.getfirstName().equals(name)) {
+				++count;
+			}
+		}
+		return count; 
+	
+}
 }
 
